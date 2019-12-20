@@ -27,9 +27,9 @@ const Header = ({ currentUser }) => (
     </div>
 )
 
-const mapStateToProps = state => ({
+const mapStateToProps = ({ user }) => ({
     // from reducer
-    currentUser: state.user.currentUser
+    currentUser: user.currentUser
 })
 
 // getting the currentUser from reducer and can remove injection from App.js
